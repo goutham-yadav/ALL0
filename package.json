@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "prisma generate"
   },
   "prisma": {
     "seed": "ts-node --esm --transpile-only -e '{\"compilerOptions\":{\"module\":\"esnext\",\"moduleResolution\":\"bundler\"}}' prisma/seed.ts"
